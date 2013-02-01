@@ -79,7 +79,7 @@ public class NetlibNameServiceDescriptor implements NameServiceDescriptor {
             // initialize name service provider
             if (JavaVersion.getJavaVersion()==JavaVersion.JAVA_1_5) {
                 // adapter compatible with Java 1.5
-                nameService = new NameServiceNetlibJava5(new NameServiceNetlibAdapter(switchingNetAddressNameService));
+                //nameService = new NameServiceNetlibJava5(new NameServiceNetlibAdapter(switchingNetAddressNameService));
             } else {
                 // adapter compatible with Java 1.6 or higher
                 nameService = new NameServiceNetlibJava6(new NameServiceNetlibAdapter(switchingNetAddressNameService));
